@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #f4f7fc;
+    color: #333;
+}
+
+header{
+    background: linear-gradient(90deg, #0d6efd, #6610f2);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav{
+    margin-top: 15px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #ffd700;
+}
+
+.banner{
+    text-align: center;
+    padding: 80px 20px;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,.6),
+    rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.banner p{
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.banner button{
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #ffd700;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+section{
+    padding: 50px 20px;
+}
+
+section h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.1);
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+form{
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form button{
+    padding: 12px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#mensagem{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+footer{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVIDADE */
+
+@media(max-width:768px){
+
+    .banner h2{
+        font-size: 28px;
+    }
+
+    nav a{
+        display: block;
+        margin: 10px 0;
+    }
+#sobre{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+}
+}
